@@ -16,6 +16,7 @@ It’s designed as a practice project to explore how to structure web pages, sty
 ---
 
 ## 🌐 Live Demo
-Check it out here 👉  
+Check it out here 👉 [https://foodie-hub-ten.vercel.app]
+
 
 ---
