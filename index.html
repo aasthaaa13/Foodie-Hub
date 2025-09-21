@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodieHub - Vintage Recipe Finder</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <!-- Corner Decorations -->
+  <div class="corner-decoration corner-top-left"></div>
+  <div class="corner-decoration corner-top-right"></div>
+  <div class="corner-decoration corner-bottom-left"></div>
+  <div class="corner-decoration corner-bottom-right"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1 class="logo">Foodie<span>Hub</span></h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for recipes...">
+        <span class="search-icon">🔎</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Categories -->
+  <div class="categories">
+    <button class="category-btn active">All Recipes</button>
+    <button class="category-btn">Vegan</button>
+    <button class="category-btn">Dessert</button>
+    <button class="category-btn">Quick Meals</button>
+    <button class="category-btn">Indian</button>
+    <button class="category-btn">Italian</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <div class="recipe-grid">
+     
+<!--Indian-->
+
+<div class="recipe-card" data-id="1">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://th.bing.com/th/id/OIP.D6vSLSOGd8OR4ak510OE3QHaE6?w=283&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Rajma Chawal">
+  <div class="card-content">
+    <h3 class="recipe-title">Rajma Chawal</h3>
+    <div class="recipe-info">
+      <span>⏱️ 40 mins</span>
+      <span>⭐ 4.8</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+<div class="recipe-card" data-id="2">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://www.indianveggiedelight.com/wp-content/uploads/2017/10/palak-paneer-featured.jpg" alt="Palak Paneer">
+  <div class="card-content">
+    <h3 class="recipe-title">Palak Paneer</h3>
+    <div class="recipe-info">
+      <span>⏱️ 35 mins</span>
+      <span>⭐ 4.9</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+<div class="recipe-card" data-id="3">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://3.bp.blogspot.com/-uck7Fi_bRfw/UA7ogu0DrzI/AAAAAAAARSI/rmu9iluFJG0/s1600/cb+ten.jpg">
+  <div class="card-content">
+    <h3 class="recipe-title">Chole Bhature</h3>
+    <div class="recipe-info">
+      <span>⏱️ 45 mins</span>
+      <span>⭐ 4.7</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+
+<!-- Vegan Recipes -->
+<div class="recipe-card" data-id="4">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://tse1.mm.bing.net/th?id=OIP.Nfox9puePw82_7xThqXJ7QHaHa&pid=Api&P=0&h=220" alt="Chickpea Salad">
+  <div class="card-content">
+    <h3 class="recipe-title">Chickpea Salad</h3>
+    <div class="recipe-info">
+      <span>⏱️ 20 mins</span>
+      <span>⭐ 4.6</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+<div class="recipe-card" data-id="5">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://fullofplants.com/wp-content/uploads/2022/03/easy-vegan-pad-thai-noodle-dish-with-bean-sprouts-thumb.jpg" alt="Vegan Pad Thai">
+  <div class="card-content">
+    <h3 class="recipe-title">Vegan Pad Thai</h3>
+    <div class="recipe-info">
+      <span>⏱️ 30 mins</span>
+      <span>⭐ 4.7</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+<div class="recipe-card" data-id="6">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://tse4.mm.bing.net/th?id=OIP.MrLTZMckIv1TFkfh43AN8gHaJ4&pid=Api&P=0&h=220" alt="Stuffed Bell Peppers">
+  <div class="card-content">
+    <h3 class="recipe-title">Stuffed Bell Peppers</h3>
+    <div class="recipe-info">
+      <span>⏱️ 40 mins</span>
+      <span>⭐ 4.8</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+
+<!-- Quick Meals -->
+<div class="recipe-card" data-id="7">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://realhousemoms.com/wp-content/uploads/Ramen-Noodle-Stir-Fry-IG.jpg" alt="Instant Ramen Stir Fry">
+  <div class="card-content">
+    <h3 class="recipe-title">Instant Ramen Stir Fry</h3>
+    <div class="recipe-info">
+      <span>⏱️ 10 mins</span>
+      <span>⭐ 4.4</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+<div class="recipe-card" data-id="8">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/egg-fried-rice-recipe.jpg" alt="Egg Fried Rice">
+  <div class="card-content">
+    <h3 class="recipe-title">Egg Fried Rice</h3>
+    <div class="recipe-info">
+      <span>⏱️ 15 mins</span>
+      <span>⭐ 4.6</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+<div class="recipe-card" data-id="9">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://th.bing.com/th/id/OIP.3jAw0R5b4UGUDZS6nityuAHaE8?rs=1&pid=ImgDetMain" alt="Grilled Cheese Sandwich">
+  <div class="card-content">
+    <h3 class="recipe-title">Grilled Cheese Sandwich</h3>
+    <div class="recipe-info">
+      <span>⏱️ 10 mins</span>
+      <span>⭐ 4.5</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+
+<!-- Indian Recipes -->
+<div class="recipe-card" data-id="10">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://th.bing.com/th/id/OIP.B32bansRI7RS3yfbUSEBNwHaHa?rs=1&pid=ImgDetMain" alt="Gulab Jamun">
+  <div class="card-content">
+    <h3 class="recipe-title">Gulab Jamun</h3>
+    <div class="recipe-info">
+      <span>⏱️ 35 mins</span>
+      <span>⭐ 4.9</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+<div class="recipe-card" data-id="11">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://bing.com/th?id=OSK.22e35e6896601da85dfe55568476266e" alt="Chocolate Lava Cake">
+  <div class="card-content">
+    <h3 class="recipe-title">Chocolate Lava Cake</h3>
+    <div class="recipe-info">
+      <span>⏱️ 25 mins</span>
+      <span>⭐ 4.8</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+<div class="recipe-card" data-id="12">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://th.bing.com/th/id/R.0099b46677738f6e2bccd270df670ac5?rik=uISkuPefdKDXtQ&riu=http%3a%2f%2fwhatscookingmom.in%2fwp-content%2fuploads%2f2013%2f05%2frasgullas.jpg&ehk=H1a0iFSxeMg7ogZjDIezUqd2JNE2Dbf%2fkE0R8vZPOyo%3d&risl=&pid=ImgRaw&r=0" alt="Rasgulla">
+  <div class="card-content">
+    <h3 class="recipe-title">Rasgulla</h3>
+    <div class="recipe-info">
+      <span>⏱️ 30 mins</span>
+      <span>⭐ 4.7</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+
+<!-- Italian Recipes -->
+<div class="recipe-card" data-id="13">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://th.bing.com/th/id/OIP.1Xr2OkJdpGuaysQAOtn5YgHaLH?rs=1&pid=ImgDetMain" alt="Margherita Pizza">
+  <div class="card-content">
+    <h3 class="recipe-title">Margherita Pizza</h3>
+    <div class="recipe-info">
+      <span>⏱️ 30 mins</span>
+      <span>⭐ 4.9</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+<div class="recipe-card" data-id="14">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://bing.com/th?id=OSK.f5678246b6267f21e4669407c4dd7053" alt="Pasta Alfredo">
+  <div class="card-content">
+    <h3 class="recipe-title">Pasta Alfredo</h3>
+    <div class="recipe-info">
+      <span>⏱️ 25 mins</span>
+      <span>⭐ 4.6</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+<div class="recipe-card" data-id="15">
+  <div class="paper-clip"></div>
+  <img class="recipe-image" src="https://natashaskitchen.com/wp-content/uploads/2019/11/Tiramisu-Cake-5.jpg" alt="Tiramisu">
+  <div class="card-content">
+    <h3 class="recipe-title">Tiramisu</h3>
+    <div class="recipe-info">
+      <span>⏱️ 45 mins</span>
+      <span>⭐ 4.8</span>
+    </div>
+    <button class="view-recipe">View Recipe</button>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+  <!-- Recipe Detail Modal -->
+  <div class="recipe-modal" id="recipeModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-close">✕</div>
+        <img class="modal-recipe-image" src="/api/placeholder/900/500" alt="Recipe Image">
+        <h2 class="modal-recipe-title">Recipe Title</h2>
+      </div>
+      <div class="modal-body">
+        <div class="recipe-details">
+          <div class="detail-item">
+            <span>Prep Time</span>
+            <span id="prepTime">30 mins</span>
+          </div>
+          <div class="detail-item">
+            <span>Cook Time</span>
+            <span id="cookTime">45 mins</span>
+          </div>
+          <div class="detail-item">
+            <span>Servings</span>
+            <span id="servings">4</span>
+          </div>
+          <div class="detail-item">
+            <span>Difficulty</span>
+            <span id="difficulty">Medium</span>
+          </div>
+          <div class="detail-item">
+            <span>Rating</span>
+            <span id="rating">⭐ 4.8</span>
+          </div>
+        </div>
+
+        <div class="recipe-section">
+          <h3 class="section-title">Ingredients</h3>
+          <div class="notebook-paper">
+            <ul class="ingredients-list" id="ingredientsList">
+              <!-- Ingredients will be loaded here-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add JavaScript at the end of the body -->
+  <script src="script.js"></script>
+</body>
+</html>
